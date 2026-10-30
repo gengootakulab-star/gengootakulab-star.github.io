@@ -3,7 +3,7 @@ const page=document.body.dataset.page;
 document.body.insertAdjacentHTML("afterbegin",
 '<a class="skip" href="#main">本文へ移動</a><header class="hd"><div class="wrap"><a class="brand" href="index.html"><img src="icon-96.png" alt="" width="36" height="36"><span>言語オタクの多言語学習ラボ<small>MY LANGUAGE PLAYGROUND</small></span></a><button class="mb" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">☰</button><nav id="nav" aria-label="メイン">'+
 NAV.map(([t,h])=>`<a href="${h}"${h.startsWith(page)?' aria-current="page"':""}>${t}</a>`).join("")+"</nav></div></header>");
-document.body.insertAdjacentHTML("beforeend",'<footer><div class="wrap">© 言語オタクの多言語学習ラボ ・ 個人が運営するサイトです ・ 辞書データ: Wiktionary(CC BY-SA・GFDL)</div></footer>');
+document.body.insertAdjacentHTML("beforeend",'<footer><div class="wrap">© 言語オタクの多言語学習ラボ ・ 個人が運営するサイトです ・ 辞書データ: Wiktionary(CC BY-SA・GFDL)<br>閲覧数をCookieなしで集計しています(GoatCounter)</div></footer>');
 const mb=document.querySelector(".mb"),nav=document.getElementById("nav");
 mb.onclick=()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
 nav.addEventListener("click",e=>{if(e.target.tagName==="A")nav.classList.remove("open")});
@@ -21,3 +21,7 @@ fb.onclick=e=>{const b=e.target.closest("button");if(!b)return;fb.querySelectorA
 const v=b.textContent;draw(o=>v==="すべて"||keys(o).includes(v))}}
 list("tools",TOOLS,"tool",o=>o.tags);
 list("notes",NOTES,"note",o=>[o.lang,o.theme]);
+
+/* 閲覧数の集計(GoatCounter)。コードを変えるときは下の1行だけ直します */
+const GC_CODE="dream";
+{const g=document.createElement("script");g.async=true;g.dataset.goatcounter="https://"+GC_CODE+".goatcounter.com/count";g.src="//gc.zgo.at/count.js";document.head.appendChild(g)}
