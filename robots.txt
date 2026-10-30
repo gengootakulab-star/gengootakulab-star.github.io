@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gengootakulab-star.github.io/sitemap.xml

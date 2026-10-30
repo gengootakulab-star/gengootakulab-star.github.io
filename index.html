@@ -2,50 +2,32 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>言語オタクの多言語学習帳</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>言語オタクの多言語学習ラボ | MY LANGUAGE PLAYGROUND</title>
+<meta name="description" content="気になる言葉を、とことん。言語好きの個人が、学習の中で見つけた疑問や、AIで作った小さなツールを公開しています。">
+<link rel="canonical" href="https://gengootakulab-star.github.io/">
+<meta property="og:type" content="website"><meta property="og:title" content="言語オタクの多言語学習ラボ | MY LANGUAGE PLAYGROUND"><meta property="og:description" content="気になる言葉を、とことん。言語好きの個人が、学習の中で見つけた疑問や、AIで作った小さなツールを公開しています。"><meta property="og:image" content="https://gengootakulab-star.github.io/icon.png"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" href="icon.png"><link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<main>
-<header>
-<h1>言語オタクの多言語学習帳</h1>
-<p class="sub">ことばを分解して、仕組みごと覚えるための研究ノートとツール集。</p>
-</header>
-
-<h2>ツール</h2>
-<div class="card">
-<h3><a href="./myanmar-words/">ミャンマー語 単語分解</a></h3>
-<span class="tag">ミャンマー語</span><span class="meta">公開中</span>
-<p>入力した単語を、音節・子音・母音・声調に分け、発音記号と意味を示す。構成要素をタップすると詳しい説明が開く。</p>
-</div>
-<p class="note">次のツールを準備中です。</p>
-
-<h2>ノート(ブログ)</h2>
-<div id="posts">
-<!-- 記事を書いたら、ここに1行ずつ追加します(新しいものを上に)
-<div class="post"><time>2026-11-01</time><a href="notes/記事のファイル名.html">記事のタイトル</a></div>
--->
-<p class="note">最初の記事を準備中です。</p>
-</div>
-
-<h2>方針</h2>
-<div class="card">
-<ol>
-<li>無料・登録不要・広告なし。入力した内容は送信せず、ブラウザの中だけで処理します。</li>
-<li>データの出典を明記します(Wiktionaryなど)。</li>
-<li>意味や説明の一部はAIが作成したもので、専門家の校閲は受けていません。</li>
-<li>各ツールに誤りの報告窓口があります。更新履歴も残します。</li>
-</ol>
-</div>
-
-<footer>
-<a id="gh" href="#">GitHub</a> ・ 辞書データ: Wiktionary(CC BY-SA・GFDL)
-</footer>
+<body data-page="index.html">
+<main id="main">
+<section class="hero"><div class="wrap">
+<span class="en">My Language Playground</span>
+<h1>気になる言葉を、<br>とことん。</h1>
+<p class="sub">学ぶ。比べる。分解する。ときどきツールも作ってみる。</p>
+<p>言語好きの個人が、学習の中で見つけた疑問や、AIで作った小さなツールを公開しています。</p>
+<div class="gl" aria-hidden="true"><span>Aa</span><span>あ</span><span>文</span><span>က</span><span>한</span></div>
+</div></section>
+<section class="sec" id="tools-sec"><div class="wrap"><span class="en">Tools</span><h2>作ってみたもの</h2><p class="lead">AIで作った、語学学習のための小さなツール。</p>
+<div id="tools" class="grid"></div><a class="more" href="tools.html">ALL TOOLS →</a></div></section>
+<section class="sec" id="notes-sec"><div class="wrap"><span class="en">Notes</span><h2>学びの記録</h2><p class="lead">学習中の発見や、ことばの仕組みについてのメモ。</p>
+<div id="notes" class="grid"></div><a class="more" href="notes.html">ALL NOTES →</a></div></section>
+<section class="sec"><div class="wrap"><div class="about"><span class="en">About the creator</span><h2>運営者について</h2><p>語学を学ぶのが好きな個人です。学習中の発見を記録し、AIを活用して便利だと思ったツールを自作・公開しています。</p><a class="more" href="about.html">ABOUT →</a></div></div></section>
 </main>
-<script>
-const USER="gengootakulab-star";
-document.getElementById("gh").href="https://github.com/"+USER;
-</script>
+<script src="data.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
