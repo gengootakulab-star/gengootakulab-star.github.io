@@ -56,5 +56,11 @@ a.card:hover{border-color:var(--ac)}
 .lead-copy{font-size:20px;font-weight:700;margin:8px 0 20px}
 .closing{font-size:20px;font-weight:700;margin:24px 0 4px}
 .num{font:700 20px Fraunces,Georgia,serif;letter-spacing:.08em;color:var(--ac)}
+.prose table.cmp{display:table;width:100%;margin:16px 0;font-size:14px;text-align:center}
+.cmp caption{text-align:left;font-weight:700;padding:6px 0}
+.cmp th{font-size:12px;font-weight:500}
+.cmp td[lang]{font-size:24px;line-height:1.5}
+.cmp .kh{background:#E6EDF4}.cmp .mm{background:#F1E9DF}
+.cmp-note{font-size:14px;color:var(--mute)}
 footer{margin-top:48px;padding:28px 0 40px;border-top:1px solid var(--sand);font-size:13px;color:var(--mute)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
