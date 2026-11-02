@@ -3,7 +3,7 @@ const page=document.body.dataset.page;
 document.body.insertAdjacentHTML("afterbegin",
 '<a class="skip" href="#main">本文へ移動</a><header class="hd"><div class="wrap"><a class="brand" href="index.html"><img src="icon-96.png" alt="" width="36" height="36"><span>言語オタクの多言語学習ラボ<small>MY LANGUAGE PLAYGROUND</small></span></a><button class="mb" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">☰</button><nav id="nav" aria-label="メイン">'+
 NAV.map(([t,h])=>`<a href="${h}"${h.startsWith(page)?' aria-current="page"':""}>${t}</a>`).join("")+"</nav></div></header>");
-document.body.insertAdjacentHTML("beforeend",'<footer><div class="wrap">© 言語オタクの多言語学習ラボ ・ 個人が運営するサイトです ・ 辞書データ: Wiktionary(CC BY-SA・GFDL)<br>閲覧数をCookieなしで集計しています(GoatCounter)</div></footer>');
+document.body.insertAdjacentHTML("beforeend",'<footer><div class="wrap">© 言語オタクの多言語学習ラボ ・ 個人が運営するサイトです ・ 辞書データ: Wiktionary(CC BY-SA・GFDL)<br>閲覧数をCookieなしで集計しています(GoatCounter)<br><a href="https://forms.gle/c2BxTpxS1v8K5iba6" target="_blank" rel="noopener">誤りの報告・ご意見(フォーム)</a></div></footer>');
 const mb=document.querySelector(".mb"),nav=document.getElementById("nav");
 mb.onclick=()=>{const o=nav.classList.toggle("open");mb.setAttribute("aria-expanded",o)};
 nav.addEventListener("click",e=>{if(e.target.tagName==="A")nav.classList.remove("open")});
