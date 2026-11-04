@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ミャンマー語の単語分解ツールを作ってみた！文字の組み合わせと発音の仕組みを理解する | 言語オタクの多言語学習ラボ</title>
+<meta name="description" content="ミャンマー語の文字の組み合わせが分かりづらくて、単語を分解して役割を確認できるツールをAIで作ってみました。">
+<link rel="canonical" href="https://gengootakulab-star.github.io/note-myanmar-word-tool.html">
+<meta property="og:type" content="website"><meta property="og:title" content="ミャンマー語の単語分解ツールを作ってみた！文字の組み合わせと発音の仕組みを理解する"><meta property="og:description" content="ミャンマー語の文字の組み合わせが分かりづらくて、単語を分解して役割を確認できるツールをAIで作ってみました。"><meta property="og:image" content="https://gengootakulab-star.github.io/icon-512.png"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png"><link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="notes.html">
+<main id="main">
+<article class="wrap page prose">
+<p><a href="notes.html">← NOTES</a></p>
+<span class="en">MYANMAR · TOOLS</span>
+<h1>ミャンマー語の単語分解ツールを作ってみた！文字の組み合わせと発音の仕組みを理解する</h1>
+<p style="color:var(--mute);font-size:14px"><time datetime="2026-11-04">2026-11-04</time></p>
+<p>ミャンマー語を勉強し始めて、最初に戸惑ったことのひとつが、文字の組み合わせ方でした。</p>
+<p>ぱっと見じゃどこからどこまでで一つの単語か分からない！どれが子音でどれが母音かも分からない！</p>
+<p>ミャンマー文字は、子音や母音を表す記号が上下左右に配置されたり、複数の記号が組み合わさったりします。</p>
+<p>文字の形を覚えるだけでは、実際にどのように発音するのかを理解するのがなかなか難しいと感じました。</p>
+<p>そこで、単語を入力すると、構成する文字や記号を分解し、それぞれの役割を確認できるツールをAIを使って作ってみました。</p>
+<h2>ミャンマー文字はどういう仕組み？</h2>
+<p>ミャンマー文字は、基本的に音節を単位として組み立てられています。</p>
+<p>ひとつの音節は、主に次のような要素で構成されています。</p>
+<ul>
+<li>子音：音節の中心となる音</li>
+<li>子音に付く記号：子音の発音を変化させるもの</li>
+<li>母音記号：母音を表すもの</li>
+<li>音節末の記号や声調に関わる記号：音の終わり方や発音に関わるもの</li>
+</ul>
+<p>これらの要素は、必ずしも左から右へ並ぶわけではありません。子音を中心に、上・下・左・右に配置されることもあります。</p>
+<p>そのため、見た目だけで文字を分解するのは意外と難しいのです。</p>
+<h2>実際に単語を分解してみる</h2>
+<p>例えば「<span lang="my">ကား</span>」という単語を見てみます。</p>
+<p><span lang="my">ကား</span>（車）</p>
+<p>この文字は、次のように分解できます。</p>
+<table>
+<thead><tr><th>文字</th><th>役割</th></tr></thead>
+<tbody>
+<tr><td><span lang="my">က</span></td><td>基本となる子音</td></tr>
+<tr><td><span lang="my">ာ</span></td><td>母音を表す記号</td></tr>
+<tr><td><span lang="my">း</span></td><td>発音・声調に関わる記号</td></tr>
+</tbody>
+</table>
+<p>つまり、見た目はひとつのまとまりでも、複数の要素が組み合わさってできています。</p>
+<p>また、「<span lang="my">ကျောင်း</span>（学校）」も見てみましょう。</p>
+<p>こちらも基本的には1音節ですが、子音に付く記号や母音、音節末に関わる表記が組み合わさっています。</p>
+<p>このように、単語をひとつずつ分解してみると、文字の組み合わせ方が少しずつ見えてきます。</p>
+<h2>記号が変わると発音も変わる</h2>
+<p>今回のツールを作るうえで、特に重視したのが、記号の役割を理解することです。</p>
+<p>例えば、次の3つを比較してみます。</p>
+<table>
+<thead><tr><th>表記</th><th>構成</th></tr></thead>
+<tbody>
+<tr><td><span lang="my">ကာ</span></td><td><span lang="my">က</span> + <span lang="my">ာ</span></td></tr>
+<tr><td><span lang="my">ကား</span></td><td><span lang="my">က</span> + <span lang="my">ာ</span> + <span lang="my">း</span></td></tr>
+<tr><td><span lang="my">ကက်</span></td><td><span lang="my">က</span> + <span lang="my">က်</span></td></tr>
+</tbody>
+</table>
+<p>見た目は似ていますが、母音の長さや音節の終わり方、声調などに違いが生まれます。</p>
+<p>つまり、記号は単に文字に付け足す飾りではなく、発音を決める重要な要素なのです。</p>
+<p>文字をひとつずつ暗記するだけでなく、それぞれの記号がどんな働きをしているのかを理解することが、ミャンマー語の読み方を身につけるうえで大切だと感じました。</p>
+<h2>AIを使ってツールを作ってみた</h2>
+<p>こうした仕組みを、単語を入力するだけで確認できたら便利なのではないかと思い、AIを活用してツールを制作しました。</p>
+<p>今回のツールでは、単語を入力すると、その構成要素を分解し、それぞれの文字や記号がどのような役割を持っているのかを確認できるようにしています。</p>
+<h3>ツールで目指したこと</h3>
+<ul>
+<li>単語を構成する文字や記号を分解する</li>
+<li>それぞれの文字の役割を確認する</li>
+<li>記号が発音に与える影響を理解する</li>
+<li>文字の組み合わせと音節の仕組みを学ぶ</li>
+</ul>
+<p>単に正解を表示するだけではなく、なぜそのような発音になるのかを理解するための補助ツールを目指しました。</p>
+<h2>実際に使ってみる</h2>
+<p>ここから実際にツールを使うことができます。</p>
+<p><a class="btn" href="/myanmar-words/">ミャンマー語 単語分解ツールを開く →</a></p>
+<p>まだ学習・開発の途中なので、すべての単語や例外的な表記に対応できるわけではありません。</p>
+<p>このツールの分析結果は、辞書や文法資料などと照らし合わせながら確認する必要があります。</p>
+<h2>作ってみて感じたこと</h2>
+<p>ミャンマー語は、文字の形を覚えるだけではなく、それぞれの記号がどのように組み合わさり、発音を作っているのかを理解することが大切だと感じました。</p>
+<p>また、AIを活用することで、自分が学習中に不便だと感じたことを、実際に使えるツールとして形にできるのも面白いところです。</p>
+<p>これからも、語学学習の中で見つけた疑問や不便を、AIを活用しながら解決していきたいと思います。</p>
+</article>
+</main>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

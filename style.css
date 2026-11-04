@@ -62,5 +62,6 @@ a.card:hover{border-color:var(--ac)}
 .cmp td[lang]{font-size:24px;line-height:1.5}
 .cmp .kh{background:#E6EDF4}.cmp .mm{background:#F1E9DF}
 .cmp-note{font-size:14px;color:var(--mute)}
+.btn{display:inline-block;min-height:44px;padding:8px 20px;background:var(--ac);color:#fff;border-radius:12px;text-decoration:none;font-weight:500}
 footer{margin-top:48px;padding:28px 0 40px;border-top:1px solid var(--sand);font-size:13px;color:var(--mute)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
