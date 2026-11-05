@@ -5,6 +5,7 @@ const TOOLS=[
 {name:"単語クイズ",sub:"覚えた語彙を試してみる",desc:"覚えた単語を試せるクイズ。",tags:["語彙","クイズ"],soon:true}
 ];
 const NOTES=[
+{lang:["KHMER","MYANMAR","THAI"],theme:"WRITING",title:"クメール文字もタイ文字も？ブラーフミー文字の子孫たち",desc:"クメール文字、ミャンマー文字、タイ文字などの共通の祖先「ブラーフミー文字」と、そこから広がった文字たちについて調べてみました。",date:"2026-11-05",href:"note-brahmi-scripts.html"},
 {lang:["KHMER"],theme:"TOOLS",title:"クメール語の文字を分解してみたい！単語分解ツールを作ってみた",desc:"クメール語の文字の仕組みが分かりづらくて、単語を入力すると構成を分解して表示するツールをAIで作ってみました。",date:"2026-11-05",href:"note-khmer-word-tool.html"},
 {lang:["MYANMAR"],theme:"TOOLS",title:"ミャンマー語の単語分解ツールを作ってみた！文字の組み合わせと発音の仕組みを理解する",desc:"文字の組み合わせが分かりづらくて、単語を分解して役割を確認できるツールをAIで作ってみました。",date:"2026-11-04",href:"note-myanmar-word-tool.html"},
 {lang:["KHMER","MYANMAR"],theme:"WRITING",title:"ミャンマー文字とクメール文字は似ている？実は共通のルーツがあった！",desc:"クメール語を先に学んでいて気づいた、ミャンマー文字との意外な共通点。",date:"2026-11-02",href:"note-khmer-myanmar-script.html"},
