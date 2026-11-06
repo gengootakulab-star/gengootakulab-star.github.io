@@ -5,6 +5,7 @@ const TOOLS=[
 {name:"インドネシア語 単語クイズ",sub:"覚えた語彙を試してみる",desc:"カテゴリーや場面ごとのフレーズで単語を学び、ストックした単語からクイズを出します。日→インドネシア語、インドネシア語→日も選べます。",tags:["インドネシア語","クイズ"],href:"/indonesian-quiz/"}
 ];
 const NOTES=[
+{lang:["KHMER","THAI","LAO"],theme:"WRITING",title:"クメール語・タイ語・ラオス語——似ているけれど何が違う？",desc:"似た文字を持つ3言語を、文字・発音・文法から比べてみる。ラオス語の「ぱにゃにゃん」も。",date:"2026-11-06",href:"note-khmer-thai-lao.html"},
 {lang:["INDONESIAN"],theme:"GRAMMAR",title:"インドネシア語の「-nya」って何者？4つの用法を整理してみた",desc:"インドネシア語でよく見かける「-nya」を、所有・目的語・特定・性質や程度の4つの使い方に分けて整理してみました。",date:"2026-11-05",href:"note-indonesian-nya.html"},
 {lang:["ASSAMESE"],theme:"WRITING",title:"紅茶の産地アッサムには、独自の言語と文字がある",desc:"紅茶の産地として有名なインド北東部のアッサム州について、独自の言語・アッサム語と文字、多様な民族の言語を調べてみました。",date:"2026-11-05",href:"note-assam.html"},
 {lang:["KHMER","MYANMAR","THAI"],theme:"WRITING",title:"クメール文字もタイ文字も？ブラーフミー文字の子孫たち",desc:"クメール文字、ミャンマー文字、タイ文字などの共通の祖先「ブラーフミー文字」と、そこから広がった文字たちについて調べてみました。",date:"2026-11-05",href:"note-brahmi-scripts.html"},
