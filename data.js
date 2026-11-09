@@ -5,6 +5,7 @@ const TOOLS=[
 {name:"インドネシア語 単語クイズ",sub:"覚えた語彙を試してみる",desc:"カテゴリーや場面ごとのフレーズで単語を学び、ストックした単語からクイズを出します。日→インドネシア語、インドネシア語→日も選べます。",tags:["インドネシア語","クイズ"],href:"/indonesian-quiz/"}
 ];
 const NOTES=[
+{lang:["IPA"],theme:"PHONETICS",title:"ハテナみたいな発音記号が好きなので、IPAを読めるようになりたい",desc:"カタカナで書けないクメール語の音がきっかけで、発音記号IPAの読み方を調べてみました。推しの記号は、喉を閉める音を表すハテナのような形の記号です。",date:"2026-11-09",href:"note-ipa.html"},
 {lang:["MYANMAR"],theme:"WRITING",title:"ミャンマー文字の記号はどこに付く?",desc:"子音の上下左右に付く記号を図で整理。文字を1つずつ足しながら、記号の動きを観察してみました。",date:"2026-11-09",href:"note-myanmar-marks.html"},
 {lang:["KHMER","THAI","LAO"],theme:"WRITING",title:"クメール語・タイ語・ラオス語——似ているけれど何が違う？",desc:"似た文字を持つ3言語を、文字・発音・文法から比べてみる。ラオス語の「ぱにゃにゃん」も。",date:"2026-11-06",href:"note-khmer-thai-lao.html"},
 {lang:["INDONESIAN"],theme:"GRAMMAR",title:"インドネシア語の「-nya」って何者？4つの用法を整理してみた",desc:"インドネシア語でよく見かける「-nya」を、所有・目的語・特定・性質や程度の4つの使い方に分けて整理してみました。",date:"2026-11-05",href:"note-indonesian-nya.html"},
