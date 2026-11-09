@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ミャンマー文字の記号はどこに付く? | 言語オタクの多言語学習ラボ</title>
+<meta name="description" content="ミャンマー文字の母音記号や介子音は、子音の上下左右のどこに付くのか。図で整理して、文字を1つずつ足しながら記号の動きを観察してみました。">
+<link rel="canonical" href="https://gengootakulab-star.github.io/note-myanmar-marks.html">
+<meta property="og:type" content="article"><meta property="og:title" content="ミャンマー文字の記号はどこに付く?"><meta property="og:description" content="ミャンマー文字の母音記号や介子音は、子音の上下左右のどこに付くのか。図で整理して、文字を1つずつ足しながら記号の動きを観察してみました。"><meta property="og:image" content="https://gengootakulab-star.github.io/icon-512.png"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png"><link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Myanmar&family=Noto+Sans+Khmer&family=Noto+Sans+Thai&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+[lang="my"]{font-family:"Noto Sans Myanmar",sans-serif;line-height:2}
+[lang="km"]{font-family:"Noto Sans Khmer",sans-serif}
+[lang="th"]{font-family:"Noto Sans Thai",sans-serif}
+.ipa{font-family:Georgia,"Times New Roman",serif}
+.prose .my-big{font-size:48px;line-height:2;text-align:center;margin:8px 0;max-width:none}
+.fig{margin:20px 0;padding:18px 14px;background:var(--card);border:1px solid var(--sand);border-radius:var(--r);box-shadow:0 1px 3px rgba(32,54,74,.06)}
+.fig figcaption{font-size:14px;color:var(--mute);margin-top:12px;line-height:1.7}
+.fig-title{display:block;font-weight:700;font-size:15px;margin-bottom:12px}
+.map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;max-width:330px;margin:0 auto}
+.map div{min-height:84px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:12px;text-align:center}
+.map .mk{background:var(--bg);border:1px solid var(--sand)}
+.map .base{background:var(--ac);color:#fff;font-size:42px}
+.map b{font-weight:400;font-size:24px;line-height:1.7;letter-spacing:.08em}
+.map small{font-size:13px;color:var(--mute);line-height:1.3}
+.med{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media(min-width:760px){.med{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.med div{padding:8px 6px 12px;background:var(--bg);border:1px solid var(--sand);border-radius:12px;text-align:center;font-size:13px;line-height:1.6}
+.med .ex{display:block;font-size:40px;line-height:1.9}
+.med strong{display:block;font-size:14px}
+.tiles{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:4px;margin:4px 0 16px}
+.tile{min-height:60px;display:flex;align-items:center;justify-content:center;background:var(--bg);border:1px solid var(--sand);border-radius:10px;font-size:21px;line-height:1.2}
+.tile.hl{background:var(--ac);border-color:var(--ac);color:#fff}
+.row-label{font-size:13px;color:var(--mute);display:block}
+.legend{margin:0;padding:0;list-style:none;font-size:14px}
+.prose .legend li{display:flex;gap:10px;align-items:baseline;padding:4px 0;border-top:1px solid var(--sand);max-width:none}
+.legend span[lang]{flex:0 0 58px;font-size:20px;text-align:center}
+.lab{margin:20px 0;padding:18px 14px;background:var(--card);border:1px solid var(--ac);border-radius:var(--r)}
+.lab .chips{margin:0 0 10px}
+.lab .chips button{font-family:"Noto Sans Myanmar",sans-serif;font-size:17px}
+.lab-out{font-size:64px;line-height:1.9;min-height:124px;text-align:center}
+.prose .lab-out,.prose .lab-msg{max-width:none}
+.lab-msg{min-height:5.4em;margin:0 0 8px;font-size:15px;line-height:1.75}
+.lab-btns{display:flex;flex-wrap:wrap;gap:8px}
+.lab button.do{min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--sand);background:#fff;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+.lab button.do.main{flex:1 1 100%;background:var(--ac);border-color:var(--ac);color:#fff;font-size:16px;font-weight:500}
+.lab button.do[disabled]{opacity:.45;cursor:default}
+.lab button.do span[lang]{line-height:1.2}
+@media(prefers-reduced-motion:no-preference){.pulse{animation:pulse .35s ease-out}@keyframes pulse{from{opacity:.25;transform:scale(.94)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body data-page="notes.html">
+<main id="main">
+<article class="wrap page prose">
+<p><a href="notes.html">← NOTES</a></p>
+<span class="en">MYANMAR · WRITING</span>
+<h1>ミャンマー文字の記号はどこに付く?</h1>
+<p style="color:var(--mute);font-size:14px"><time datetime="2026-11-09">2026-11-09</time></p>
+
+<p>まずは、この単語を見てください。</p>
+<p class="my-big" lang="my">ကျောင်း</p>
+<p>「学校」という意味の言葉です。丸い文字の周りに、小さな記号がいくつも付いています。</p>
+<p>では、どこから読めばいいのでしょう？一番左にある記号から……と思いたくなりますが、実はそこから読み始めるのではありません。</p>
+<p>ミャンマー文字の記号は、子音の上にも下にも、右にも左にも付きます。今回は、どの記号がどこに付くのかを図で整理して、文字を1つずつ足しながら動きを観察してみました。</p>
+
+<h2>1. 真ん中にいるのは子音</h2>
+<p>ミャンマー文字は、クメール文字やタイ文字と同じく、インド系の文字の仲間です。子音の文字が中心にあって、その周りに母音の記号が付きます。</p>
+<p>何も付いていない က は、それだけで「カ」に近い音を表します。別の母音にしたいときに、記号を足します。</p>
+<p>配置を1枚の図にしてみました。</p>
+
+<figure class="fig">
+<span class="fig-title">図1 母音記号が付く場所</span>
+<div class="map">
+<div></div>
+<div class="mk"><b lang="my">◌ိ ◌ီ ◌ဲ</b><small>上</small></div>
+<div></div>
+<div class="mk"><b lang="my">◌ေ</b><small>左</small></div>
+<div class="base" lang="my">က</div>
+<div class="mk"><b lang="my">◌ာ ◌ါ</b><small>右</small></div>
+<div></div>
+<div class="mk"><b lang="my">◌ု ◌ူ</b><small>下</small></div>
+<div></div>
+</div>
+<figcaption>◌ は、子音が入る場所を示す印です。</figcaption>
+</figure>
+
+<p>実際に က に付けると、こうなります。</p>
+<table class="cmp">
+<thead><tr><th>形</th><th>記号の場所</th><th>読み(IPA)</th></tr></thead>
+<tbody>
+<tr><td lang="my">ကေ</td><td>左</td><td class="ipa">kè</td></tr>
+<tr><td lang="my">ကိ</td><td>上</td><td class="ipa">kḭ</td></tr>
+<tr><td lang="my">ကီ</td><td>上</td><td class="ipa">kì</td></tr>
+<tr><td lang="my">ကဲ</td><td>上</td><td class="ipa">kɛ́</td></tr>
+<tr><td lang="my">ကု</td><td>下</td><td class="ipa">kṵ</td></tr>
+<tr><td lang="my">ကူ</td><td>下</td><td class="ipa">kù</td></tr>
+<tr><td lang="my">ကာ</td><td>右</td><td class="ipa">kà</td></tr>
+<tr><td lang="my">ကော</td><td>左と右</td><td class="ipa">kɔ́</td></tr>
+<tr><td lang="my">ကို</td><td>上と下</td><td class="ipa">kò</td></tr>
+</tbody>
+</table>
+<p>面白いのは最後の2つです。ော は ေ と ာ の組み合わせで、子音を左右からはさみます。ို は ိ と ု の組み合わせで、上下からはさみます。1つの母音が、2か所に分かれて書かれるんですね。</p>
+<p>もう1つ、右に付く ာ には、背の高い ါ という形もあります。音は同じで、ခ や ပ など、一部の子音の後ろで使われます。また、下に付く ု や ူ は、下の場所がふさがっていると少し右にずれることがあります。記号の位置は、周りの文字に合わせて微調整されているわけです。</p>
+
+<h2>2. 子音にくっつく「介子音」</h2>
+<p>ミャンマー文字には、母音の記号とは別に、子音に音を足す4つの記号があります。介子音と呼ばれるものです。</p>
+
+<figure class="fig">
+<span class="fig-title">図2 4つの介子音(子音 မ に付けた例)</span>
+<div class="med">
+<div><span class="ex" lang="my">မျ</span><strong>ျ ヤピン</strong>右と下<br><span class="ipa">[mj]</span></div>
+<div><span class="ex" lang="my">မြ</span><strong>ြ ヤイッ</strong>左から囲む<br><span class="ipa">[mj]</span></div>
+<div><span class="ex" lang="my">မွ</span><strong>ွ ワスェ</strong>下<br><span class="ipa">[mw]</span></div>
+<div><span class="ex" lang="my">မှ</span><strong>ှ ハト</strong>下<br><span class="ipa">[m̥]</span></div>
+</div>
+<figcaption>カタカナの名前は目安です。[m̥] は、声帯を震わせない m の音を表します。</figcaption>
+</figure>
+
+<p>ျ と ြ は形も位置もまるで違うのに、標準的なミャンマー語では同じ音になります。ラカイン語(アラカン語)のような方言では、ြ を r の音で読むそうです。つづりに古い音の区別が残っている、というわけですね。</p>
+<p>さらに、က のような子音に付くと音そのものが変わります。ကျ も ကြ も、「キャ」ではなく「チャ」に近い音 <span class="ipa">[tɕ]</span> になります。</p>
+<p>特に見た目で迷うのが ြ です。子音の左側から上下にまで回り込むので、左端に大きなカッコのような線があったら、たいていこれです。</p>
+
+<h2>3. 「学校」を分解してみる</h2>
+<p>ここまでの知識で、最初の単語に戻ってみましょう。</p>
+
+<figure class="fig">
+<span class="fig-title">図3 <span lang="my">ကျောင်း</span> の部品</span>
+<ul class="legend">
+<li><span lang="my">ကျ</span><div>子音 က ＋介子音 ျ。読みはここから始まります</div></li>
+<li><span lang="my">◌ေ ◌ာ</span><div>2つで1組の母音 ော。子音を左右からはさみます</div></li>
+<li><span lang="my">င်</span><div>子音 င に ် が付いて、音節の終わりの音になります</div></li>
+<li><span lang="my">◌း</span><div>高い調子を表す声調の記号です</div></li>
+</ul>
+<figcaption>全体の読みは <span class="ipa">/tɕáʊɴ/</span>(チャウンに近い音)。ော と င် が組み合わさって、au に近い響きになります。</figcaption>
+</figure>
+
+<p>左端の ေ は、一番左に書かれていますが、読む順番では子音の後ろです。「左にあるけれど、音は後」。ここが最初のつまずきポイントだと思います。</p>
+<p>ちなみに、この ကျောင်း は「学校」だけでなく「僧院」も意味します。ミャンマーでは、僧院が村の子どもたちの教育の場でもあったそうです。古いビルマ語では က္လောင်း(klong)という形だったといわれ、今の「チャ」の音になる前の姿がしのばれます。一つの単語から、文化の話まで広がっていくのが楽しいですね。</p>
+
+<h2>4. 見た目の順と、データの順</h2>
+<p>ここからは寄り道です。調べていて一番驚いたのがこの話でした。</p>
+<p>パソコンやスマホの中では、文字は1列に並んだデータとして保存されています。では、一番左に見える ေ は、データでも先頭にあるのでしょうか？</p>
+
+<figure class="fig">
+<span class="fig-title">図4 <span lang="my">ကျောင်း</span> の2つの並び</span>
+<span class="row-label">目に見える順</span>
+<div class="tiles" lang="my"><div class="tile hl">◌ေ</div><div class="tile">ကျ</div><div class="tile">◌ာ</div><div class="tile">င်</div><div class="tile">◌း</div></div>
+<span class="row-label">データに入っている順</span>
+<div class="tiles" lang="my" style="margin-bottom:0"><div class="tile">က</div><div class="tile">◌ျ</div><div class="tile hl">◌ေ</div><div class="tile">◌ာ</div><div class="tile">င</div><div class="tile">◌်</div><div class="tile">◌း</div></div>
+</figure>
+
+<p>正解は、子音の後ろでした。Unicode では ေ は発音の順番どおり、子音や介子音の後ろに入ります。左に表示するのは、フォントと表示の仕組みの仕事です。</p>
+<p>実際に体験してみましょう。ボタンを押すと、データの順番どおりに部品を1つずつ足していきます。</p>
+
+<section class="lab" aria-label="文字の組み立て体験">
+<span class="en">Try it</span>
+<div class="chips" id="lab-words" role="group" aria-label="組み立てる単語"></div>
+<p class="lab-out" id="lab-out" lang="my"></p>
+<p class="lab-msg" id="lab-msg" aria-live="polite"></p>
+<span class="row-label">データに入っている順</span>
+<div class="tiles" id="lab-data" lang="my"></div>
+<div class="lab-btns">
+<button type="button" class="do main" id="lab-next"></button>
+<button type="button" class="do" id="lab-undo">1つ戻す</button>
+<button type="button" class="do" id="lab-reset">最初から</button>
+</div>
+</section>
+
+<p>ေ を足した瞬間に、記号が子音の左へ移動しましたか？データでは後ろに足しているのに、画面では前に出るわけです。</p>
+<p>ただし、これは「保存される順番」の話です。キーボードによっては、ေ を子音より先に打てるようになっているものもあるそうです。紙に書く感覚に合わせた工夫ですね。</p>
+
+<h3>タイ文字は逆だった</h3>
+<p>同じインド系の文字でも、この扱いは文字によって違います。比べてみました。</p>
+<table class="cmp">
+<thead><tr><th>文字</th><th>形</th><th>データの順</th></tr></thead>
+<tbody>
+<tr><td>ミャンマー文字</td><td lang="my">ကေ</td><td><span lang="my">က</span> → <span lang="my">◌ေ</span></td></tr>
+<tr><td>クメール文字</td><td lang="km">កេ</td><td><span lang="km">ក</span> → <span lang="km">◌េ</span></td></tr>
+<tr><td>タイ文字</td><td lang="th">เก</td><td><span lang="th">เ</span> → <span lang="th">ก</span></td></tr>
+</tbody>
+</table>
+<p>タイ文字では、左に書く母音は、データでも子音の前に入ります。発音の順番ではなく、見た目の順番です。見た目はよく似た仕組みなのに、コンピューターの中での扱いは正反対なんですね。</p>
+
+<h3>ミャンマーで起きた「文字コード問題」</h3>
+<p>実はミャンマーでは、この順番の違いが社会全体の問題になっていました。</p>
+<p>2006年ごろに作られた Zawgyi(ゾージー)というフォントと入力方式は、紙に書く見た目の順番で打てるのが特徴でした。分かりやすさもあって、Unicode よりも広く普及したそうです。ところが Zawgyi は Unicode の規格に沿っていなかったため、片方の方式で書いた文章が、もう片方では文字化けしてしまいます。同じ単語にいくつもの打ち方が存在して、検索や並べ替えも難しかったといわれています。</p>
+<p>そこでミャンマー政府は、2019年10月1日を「U-Day」と定めて、Unicode への公式な移行を進めました。記号が子音のどちら側にあるか、という小さな話が、国全体のデジタル環境を左右していたわけです。</p>
+
+<h2>5. 読むときのコツをまとめると</h2>
+<ul>
+<li>まず、音節の中心になる子音を探す</li>
+<li>左端の ေ や ြ から読み始めない。ြ は子音とセットで読む</li>
+<li>次に、母音の記号を上下左右から集める</li>
+<li>် が付いた文字は、音節の終わりの音</li>
+<li>最後に း などの声調の記号を確認する</li>
+</ul>
+<p>文字の周りの記号は、最初は飾りのかたまりに見えます。でも場所ごとの役割が分かると、1つの音節がブロックのように見えてきました。</p>
+<p>単語をもっと分解してみたい方は、<a href="/myanmar-words/">ミャンマー語の単語分解ツール</a>も試してみてください。部品ごとにタップして、役割を確認できます。</p>
+<p style="color:var(--mute);font-size:14px">読みやカタカナは学習の目安です。内容に誤りを見つけたときは、ページ下部の「誤りの報告・ご意見(フォーム)」から教えていただけるとうれしいです。</p>
+
+<h2>参考</h2>
+<ul style="font-size:14px">
+<li><a href="https://r12a.github.io/scripts/mymr/my" target="_blank" rel="noopener">Myanmar (Burmese) orthography notes(r12a)</a>:記号の位置と保存順</li>
+<li><a href="https://www.unicode.org/notes/tn11/" target="_blank" rel="noopener">UTN #11 Representing Myanmar in Unicode</a>:Unicode での並び順</li>
+<li><a href="https://www.unicode.org/versions/Unicode15.1.0/ch16.pdf" target="_blank" rel="noopener">The Unicode Standard 15.1, Chapter 16</a>:タイ文字などの左側の母音</li>
+<li><a href="https://rising.globalvoices.org/blog/2019/09/06/unified-under-one-font-system-as-myanmar-prepares-to-migrate-from-zawgyi-to-unicode/" target="_blank" rel="noopener">Unified under one font system(Global Voices)</a>:Zawgyi と Unicode への移行</li>
+<li><a href="https://en.wikipedia.org/wiki/Zawgyi_font" target="_blank" rel="noopener">Zawgyi font(Wikipedia)</a>:U-Day と文字化けの問題</li>
+<li><a href="https://en.wikipedia.org/wiki/Burmese_alphabet" target="_blank" rel="noopener">Burmese alphabet(Wikipedia)</a>:介子音の名前と発音</li>
+<li><a href="https://en.wikipedia.org/wiki/Kyaung" target="_blank" rel="noopener">Kyaung(Wikipedia)</a>:僧院と教育</li>
+<li>Wiktionary「ကျောင်း」:発音と語源</li>
+</ul>
+</article>
+</main>
+<script>
+(function(){
+var WORDS=[
+{w:"ကျောင်း",gloss:"学校",parts:[
+["က","まずは子音の က から始めます。"],
+["ျ","介子音 ျ を足すと、က の右と下に付きました。"],
+["ေ","ここが見どころ！データでは က の後ろに足したのに、画面では左へ移動しました。"],
+["ာ","ာ は右に付きます。ေ と ာ で、子音を左右からはさみました。"],
+["င","次の子音 င を足します。"],
+["်","် を足すと、င が音節の終わりの音になります。"],
+["း","最後に、高い調子を表す း を足して完成です。「学校」という意味です。"]]},
+{w:"မြန်မာ",gloss:"ミャンマー",parts:[
+["မ","まずは子音の မ から始めます。"],
+["ြ","ここが見どころ！データでは မ の後ろに足したのに、線が左から回り込みました。"],
+["န","次の子音 န を足します。"],
+["်","် を足すと、န が音節の終わりの音になります。"],
+["မ","次の音節の子音 မ です。"],
+["ာ","ာ を右に足して完成です。「ミャンマー」という意味です。"]]},
+{w:"ကျေးဇူး",gloss:"感謝",parts:[
+["က","まずは子音の က から始めます。"],
+["ျ","介子音 ျ を足すと、က の右と下に付きました。"],
+["ေ","ここが見どころ！データでは後ろに足したのに、画面では左へ移動しました。"],
+["း","高い調子を表す း を足すと、最初の音節ができました。"],
+["ဇ","次の音節の子音 ဇ です。"],
+["ူ","ူ は子音の下に付きます。"],
+["း","もう一度 း を足して完成です。「感謝」という意味で、お礼の言葉にも使います。"]]}
+];
+var MARK=/[ါ-း်-ှ]/;
+var cur=0,n=1;
+var el=function(id){return document.getElementById(id)};
+var out=el("lab-out"),msg=el("lab-msg"),data=el("lab-data"),next=el("lab-next"),undo=el("lab-undo"),reset=el("lab-reset"),words=el("lab-words");
+var show=function(c){return (MARK.test(c)?"◌":"")+c};
+function draw(animate){
+  var p=WORDS[cur].parts,i;
+  out.textContent=p.slice(0,n).map(function(x){return x[0]}).join("");
+  msg.textContent=p[n-1][1];
+  data.innerHTML="";
+  for(i=0;i<p.length;i++){
+    var t=document.createElement("div");
+    t.className="tile"+(i===n-1?" hl":"");
+    t.textContent=i<n?show(p[i][0]):"";
+    data.appendChild(t);
+  }
+  undo.disabled=n<=1;
+  if(n<p.length){
+    next.disabled=false;
+    next.innerHTML='＋ <span lang="my">'+show(p[n][0])+'</span> を足す';
+  }else{
+    next.disabled=true;
+    next.textContent="完成！";
+  }
+  if(animate){out.classList.remove("pulse");void out.offsetWidth;out.classList.add("pulse")}
+}
+WORDS.forEach(function(o,i){
+  var b=document.createElement("button");
+  b.type="button";
+  b.lang="my";
+  b.textContent=o.w;
+  b.setAttribute("aria-label",o.w+"("+o.gloss+")");
+  b.setAttribute("aria-pressed",i===0);
+  b.onclick=function(){cur=i;n=1;[].forEach.call(words.children,function(x,k){x.setAttribute("aria-pressed",k===i)});draw(true)};
+  words.appendChild(b);
+});
+next.onclick=function(){if(n<WORDS[cur].parts.length){n++;draw(true);if(next.disabled)reset.focus()}};
+undo.onclick=function(){if(n>1){n--;draw(true);if(undo.disabled)next.focus()}};
+reset.onclick=function(){n=1;draw(true);next.focus()};
+draw(false);
+})();
+</script>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
