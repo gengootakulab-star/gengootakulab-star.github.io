@@ -7,6 +7,7 @@ const TOOLS=[
 {name:"モンゴル文字 縦書き単語帳",sub:"縦に書く文字を分けてみる",desc:"モンゴル語の単語を、伝統的なモンゴル文字の縦書きで表示します。1文字ずつに分けて、語頭・語中・語末の形を調べられます。",tags:["モンゴル語","分解"],href:"/mongol-bichig/"}
 ];
 const NOTES=[
+{lang:["MONGOLIAN"],theme:"WRITING",title:"モンゴル文字は、背骨を一気に書く?なぞり書きで気になった、書き方の目安と書道家たち",desc:"なぞり書きで気になった「背骨は一気に書くの?」という疑問から、書き方の目安、文字をつくる6つの線、書道家たちと書く姿を見られる動画を調べてみました。",date:"2026-11-14",href:"note-mongolian-handwriting.html"},
 {lang:["MONGOLIAN"],theme:"CULTURE",title:"遊牧の国は、詩の国だった？草原の暮らしと、頭がそろうモンゴルの詩",desc:"5種類の家畜とともに移り住む遊牧の暮らし、言葉に残る馬と草原、行の頭の音をそろえる詩、長い歌オルティンドーを調べてみました。",date:"2026-11-13",href:"note-mongolian-nomad-poetry.html"},
 {lang:["MONGOLIAN"],theme:"WRITING",title:"VIVANTのバルカから、モンゴル文字へ。縦に書いて、左から右へ進む文字",desc:"チンギス・ハンとハンコの話から始まった文字の由来、アラム文字からの長い旅、形が変わる文字のしくみ、書道の世界を調べてみました。",date:"2026-11-13",href:"note-mongolian-script.html"},
 {lang:["SWAHILI"],theme:"GRAMMAR",title:"タモリさんのあれは本物?スワヒリ語は1語で文になる",desc:"ninakupenda は1語で「私はあなたを愛している」。本物のスワヒリ語の音としくみを調べてみました。外来語、ケニアの言語事情、スワヒリラップにも寄り道します。",date:"2026-11-10",href:"note-swahili-verbs.html"},
