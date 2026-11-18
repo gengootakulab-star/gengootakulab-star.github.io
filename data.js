@@ -7,6 +7,7 @@ const TOOLS=[
 {name:"モンゴル文字 縦書き単語帳",sub:"縦に書く文字を分けてみる",desc:"モンゴル語の単語を、伝統的なモンゴル文字の縦書きで表示します。1文字ずつに分けて、語頭・語中・語末の形を調べられます。",tags:["モンゴル語","分解"],href:"/mongol-bichig/"}
 ];
 const NOTES=[
+{lang:["ENGLISH","JAPANESE","MONGOLIAN","HINDI","KHMER"],theme:"ESSAY",title:"なんでこんなに面倒なの？言葉の「非合理」には、ちゃんと理由があった",desc:"英語の不規則動詞、日本語の音便、形が変わるモンゴル文字、ヒンディー語のそり舌音、消えるクメール語の r。学習者には面倒に見える仕組みが、なぜ生まれて残ったのかを調べてみました。",date:"2026-11-18",href:"note-why-irregular.html"},
 {lang:["MONGOLIAN"],theme:"WRITING",title:"モンゴル文字は、背骨を一気に書く?なぞり書きで気になった、書き方の目安と書道家たち",desc:"なぞり書きで気になった「背骨は一気に書くの?」という疑問から、書き方の目安、文字をつくる6つの線、書道家たちと書く姿を見られる動画を調べてみました。",date:"2026-11-14",href:"note-mongolian-handwriting.html"},
 {lang:["MONGOLIAN"],theme:"CULTURE",title:"遊牧の国は、詩の国だった？草原の暮らしと、頭がそろうモンゴルの詩",desc:"5種類の家畜とともに移り住む遊牧の暮らし、言葉に残る馬と草原、行の頭の音をそろえる詩、長い歌オルティンドーを調べてみました。",date:"2026-11-13",href:"note-mongolian-nomad-poetry.html"},
 {lang:["MONGOLIAN"],theme:"WRITING",title:"VIVANTのバルカから、モンゴル文字へ。縦に書いて、左から右へ進む文字",desc:"チンギス・ハンとハンコの話から始まった文字の由来、アラム文字からの長い旅、形が変わる文字のしくみ、書道の世界を調べてみました。",date:"2026-11-13",href:"note-mongolian-script.html"},

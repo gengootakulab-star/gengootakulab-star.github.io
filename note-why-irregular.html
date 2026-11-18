@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>なんでこんなに面倒なの？言葉の「非合理」には、ちゃんと理由があった | 言語オタクの多言語学習ラボ</title>
+<meta name="description" content="英語の不規則動詞、日本語の音便、形が変わるモンゴル文字、ヒンディー語のそり舌音、消えるクメール語の r。学習者には面倒に見える仕組みが、なぜ生まれて残ったのかを調べてみました。">
+<link rel="canonical" href="https://gengootakulab-star.github.io/note-why-irregular.html">
+<meta property="og:type" content="article"><meta property="og:title" content="なんでこんなに面倒なの？言葉の「非合理」には、ちゃんと理由があった"><meta property="og:description" content="学習者には面倒に見える言葉の仕組みが、なぜ生まれて残ったのか。英語・日本語・モンゴル文字・ヒンディー語・クメール語から調べてみました。"><meta property="og:image" content="https://gengootakulab-star.github.io/icon-512.png"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png"><link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+Khmer&family=Noto+Sans+Devanagari&family=Noto+Sans+Mongolian&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+[lang="km"]{font-family:"Noto Sans Khmer",sans-serif}
+[lang="hi"]{font-family:"Noto Sans Devanagari",sans-serif}
+[lang="mn-Mong"]{font-family:"Noto Sans Mongolian",sans-serif}
+.big{font-size:24px;line-height:1.5}
+.small{font-size:14px;color:var(--mute)}
+.box{background:var(--card);border:1px solid var(--sand);border-radius:var(--r);padding:16px 20px;margin:16px 0;box-shadow:0 1px 3px rgba(32,54,74,.06)}
+.box p{margin:6px 0}
+.prose table.t{display:table;width:100%;margin:12px 0;font-size:15px}
+.t th{font-size:13px;font-weight:500;background:var(--bg)}
+.t td.c{text-align:center}
+.onbin-btn{min-height:44px;padding:8px 18px;border:1px solid var(--ac);border-radius:12px;background:#fff;color:var(--ac);font:inherit;font-weight:500;cursor:pointer}
+.onbin-btn[aria-pressed="true"]{background:var(--ac);color:#fff}
+.ob td.f{font-size:18px;font-weight:500}
+.ob .new{color:var(--ac)}
+.mong-row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin:12px 0}
+.mong-row figure{margin:0;text-align:center;background:var(--card);border:1px solid var(--sand);border-radius:12px;padding:12px 14px;min-width:72px}
+.mong-row .v{writing-mode:vertical-lr;font-size:36px;line-height:1.2;height:96px;display:inline-block}
+.mong-row figcaption{font-size:13px;color:var(--mute);margin-top:6px}
+.mong-word{writing-mode:vertical-lr;font-size:32px;line-height:1.4;height:180px;display:inline-block}
+.force{display:grid;gap:12px;margin:16px 0}
+@media(min-width:760px){.force{grid-template-columns:1fr 1fr}}
+.force .box{margin:0}
+.force h3{font-size:16px;margin:0 0 4px;color:var(--ac)}
+</style>
+</head>
+<body data-page="notes.html">
+<main id="main">
+<article class="wrap page prose">
+<p><a href="notes.html">← NOTES</a></p>
+<span class="en">ENGLISH · JAPANESE · MONGOLIAN · HINDI · KHMER · ESSAY</span>
+<h1>なんでこんなに面倒なの？言葉の「非合理」には、ちゃんと理由があった</h1>
+<p style="color:var(--mute);font-size:14px"><time datetime="2026-11-18">2026-11-18</time></p>
+
+<p>いろんな言語を学んでいると、ときどき心の中でつっこみたくなります。</p>
+<p class="lead-copy">「なんで、わざわざこんな面倒なことを？」</p>
+<p>英語の go の過去形は、なぜ goed ではなく went なのか。モンゴル文字は、なぜ同じ文字なのに単語の頭・真ん中・終わりで形が変わるのか。ヒンディー語には、なぜ舌をそらせて出す「た」や「だ」があるのか。クメール語では、文字にはしっかり r が書いてあるのに、なぜ読まないことがあるのか。</p>
+<p>外国語として学ぶ側からすると、どれも「非効率」に見えます。全部規則どおりにしてくれたら、覚えるのがずっと楽なのに。</p>
+<p>でも、その言葉を毎日話してきた人たちにとっては、きっとそうなる理由があったはずです。そう思って、5つの「なんで？」を1つずつ調べてみました。</p>
+
+<h2>1. 英語の不規則動詞：よく使う言葉ほど、昔の形が残る</h2>
+<p>英語の不規則動詞は、学校で表を丸暗記した人も多いと思います。go – went – gone、take – took – taken……。</p>
+<p>実はこの不規則動詞には、はっきりした傾向があります。<strong>よく使う動詞ほど不規則なまま残り、あまり使わない動詞ほど規則的な -ed の形に変わっていく</strong>のです。</p>
+<p>2007年に科学誌『Nature』に載った研究では、約1,200年前の古英語で不規則だった動詞177語を追いかけています。そのうち中英語の時代にも不規則だったのは145語、今も不規則なのは98語でした。help、laugh、walk、work なども、昔は不規則な活用をしていたそうです。</p>
+<p>さらにこの研究は、動詞が規則化するまでの「半減期」まで計算しています。使われる頻度が100分の1の動詞は、10倍の速さで規則化する、という結果でした。</p>
+<table class="t">
+<thead><tr><th>動詞</th><th>規則化の半減期(研究の推定)</th></tr></thead>
+<tbody>
+<tr><td>be</td><td>38,800年</td></tr>
+<tr><td>think</td><td>14,400年</td></tr>
+<tr><td>smite(打つ・古い語)</td><td>700年</td></tr>
+<tr><td>shrive(懺悔を聞く・古い語)</td><td>300年</td></tr>
+</tbody>
+</table>
+<p>be はもう、ほぼ永遠に不規則のままですね。英語で最もよく使われる動詞の上位10語(be、have、do、go、say など)も、すべて不規則動詞です。</p>
+<p>なぜよく使う語ほど残るのか。私なりに考えてみると、よく使う言葉は毎日何度も耳にするので、不規則でも覚え直す必要がありません。一方、たまにしか使わない動詞は、昔の形を忘れてしまいます。そうなると、「とりあえず -ed を付けておこう」となるのでしょう。母語話者の子どもも、小さいころは goed のような「規則どおりの間違い」をする時期があるといわれます。</p>
+<p>ちなみにこの研究は、次に規則化しそうな動詞として wed(結婚する、過去形 wed)を挙げていました。未来のカップルは newly wed ではなく wedded になるかも、というユーモアつきです。</p>
+
+<div class="box">
+<p><strong>寄り道:went は、もともと別の動詞だった</strong></p>
+<p>go の過去形 went は、go から変化した形ではありません。もとは wend(進む・向かう)という別の動詞の過去形です。</p>
+<p>古英語の go(gān)の過去形は ēode という形で、これもまた別の語根から来ていました。中英語の時代に wend の過去形 went が go の過去形として使われるようになり、1500年ごろには ēode の系統にすっかり取って代わったそうです。つまり go は、過去形を2回も「よそから借りて」いることになります。</p>
+<p>こうした「別の語の形を借りて活用表を埋める」現象は、言語学で<strong>補充法</strong>(suppletion)と呼ばれます。good – better もその仲間です。</p>
+</div>
+
+<h2>2. 日本語の活用：言いやすさが、形を変えた</h2>
+<p>今度は、私たちの母語です。日本語を学ぶ外国の人がよくつまずくのが「て形」だといわれます。</p>
+<p>書く → 書いて、読む → 読んで、待つ → 待って。辞書の形が「く」「む」「つ」と違うと、て形の作り方もばらばらです。日本語教室では、この変化を歌にして覚えることもあるそうです。</p>
+<p>でも、昔からこうだったわけではありません。もともとは「書きて」「読みて」「待ちて」のように、動詞の連用形に「て」をそのままつなげていました。それが、話しやすいように音が変わったのです。これを<strong>音便</strong>(おんびん)といいます。音便が広まりはじめたのは、平安時代の初めごろとされています。</p>
+<p>ボタンを押すと、昔の形と今の形を切り替えられます。</p>
+<p><button type="button" class="onbin-btn" id="onbinBtn" aria-pressed="false">昔の形を見る</button></p>
+<table class="t ob" aria-live="polite">
+<thead><tr><th>動詞</th><th>て形</th><th>変わり方</th></tr></thead>
+<tbody>
+<tr><td>書く</td><td class="f" data-old="書きて" data-new="書いて">書いて</td><td>イ音便(き → い)</td></tr>
+<tr><td>泳ぐ</td><td class="f" data-old="泳ぎて" data-new="泳いで">泳いで</td><td>イ音便(ぎ → い)</td></tr>
+<tr><td>待つ</td><td class="f" data-old="待ちて" data-new="待って">待って</td><td>促音便(ち → っ)</td></tr>
+<tr><td>取る</td><td class="f" data-old="取りて" data-new="取って">取って</td><td>促音便(り → っ)</td></tr>
+<tr><td>読む</td><td class="f" data-old="読みて" data-new="読んで">読んで</td><td>撥音便(み → ん)</td></tr>
+<tr><td>遊ぶ</td><td class="f" data-old="遊びて" data-new="遊んで">遊んで</td><td>撥音便(び → ん)</td></tr>
+<tr><td>話す</td><td class="f" data-old="話して" data-new="話して">話して</td><td>変わらない</td></tr>
+</tbody>
+</table>
+<p>声に出して比べてみると、「書きて」より「書いて」、「待ちて」より「待って」のほうが、たしかに口が楽です。今の形は、何百年もかけて大勢の人が「言いやすい形」に寄せていった結果なんですね。</p>
+<p>そして、ここにも英語と同じ傾向が見えます。「行く」は「く」で終わるのに、て形は「行いて」ではなく「行って」です。ルールから外れた例外になっているのは、やっぱりとてもよく使う動詞でした。</p>
+
+<h2>3. モンゴル文字：形が変わるのは、ペンを離さずに書くため</h2>
+<p>モンゴル文字を練習していて最初に驚いたのが、同じ文字なのに、単語の頭・真ん中・終わりで形が変わることです。たとえば n の文字は、こうなります。</p>
+<div class="mong-row">
+<figure><span class="v" lang="mn-Mong">ᠨ&#x200D;</span><figcaption>語頭</figcaption></figure>
+<figure><span class="v" lang="mn-Mong">&#x200D;ᠨ&#x200D;</span><figcaption>語中</figcaption></figure>
+<figure><span class="v" lang="mn-Mong">&#x200D;ᠨ</span><figcaption>語末</figcaption></figure>
+</div>
+<p class="small">表示はお使いの端末のフォントによって少し変わることがあります。</p>
+<p>覚える形が何倍にも増えるので、学ぶ側には大変です。でも、文字のルーツをたどると理由が見えてきます。</p>
+<p>モンゴル文字は、ウイグル文字を元にしています。さらにさかのぼると、シルクロードの商人だったソグド人の文字、そしてアラム文字にたどり着きます。この系統の文字は、文字と文字を線でつなげて、ペンを紙から離さずに続けて書く<strong>筆記体</strong>です。続けて書くには、前の文字から線を受け取り、次の文字へ線を渡す形が必要になります。単語の頭には「受け取る線」がいらず、終わりには「渡す線」がいりません。だから、位置によって形が変わるのです。</p>
+<p>同じアラム文字の流れをくむアラビア文字も、位置によって形が変わります。ちなみにウイグル文字はもともと右から左への横書きでしたが、90度回して縦書きにした、といわれています。</p>
+<p>もうひとつ、形が変わる利点もありそうです。語頭と語末の形が決まっていると、単語の始まりと終わりがひと目で分かります。</p>
+<p style="text-align:center"><span class="mong-word" lang="mn-Mong">ᠮᠣᠩᠭᠣᠯ ᠪᠢᠴᠢᠭ</span></p>
+<p class="small" style="text-align:center">mongγol bičig(モンゴル文字)</p>
+<p>書く人にとっては速く書けて、読む人にとっては切れ目が分かりやすい。学習者には面倒でも、手で書いて読む人たちにとっては、よくできた仕組みだったのかもしれません。</p>
+<p>形の変化は、<a href="/mongol-bichig/">モンゴル文字 縦書き単語帳</a>で1文字ずつ確かめられます。文字の由来は、<a href="note-mongolian-script.html">モンゴル文字の記事</a>でも詳しく調べています。</p>
+
+<h2>4. ヒンディー語のそり舌音：区別するために必要な音</h2>
+<p>ヒンディー語の音を聞いていると、日本語の「た」や「だ」とは違う、こもったような音が出てきます。舌の先を上にそらせて、上あごの奥のほうにつけて出す<strong>そり舌音</strong>です。巻き舌のように聞こえることもあります。</p>
+<p>日本語話者には「同じ『だ』でいいのでは？」と思えますが、ヒンディー語ではこの違いで意味が変わります。</p>
+<table class="t">
+<thead><tr><th>ふつうの音(舌先を歯の裏に)</th><th>そり舌音</th></tr></thead>
+<tbody>
+<tr><td><span lang="hi" class="big">दाल</span><br>dāl「豆(のスープ)」</td><td><span lang="hi" class="big">डाल</span><br>ḍāl「枝」</td></tr>
+<tr><td><span lang="hi" class="big">तीन</span><br>tīn「3」</td><td><span lang="hi" class="big">टीन</span><br>ṭīn「ブリキ」</td></tr>
+</tbody>
+</table>
+<p>豆と枝を言い間違えたら困りますね。音を省いて楽をしたくても、区別がなくなると相手に伝わらなくなる。だからこの音は、手間がかかっても残っているのでしょう。</p>
+<p>ちなみに、男の子を意味する <span lang="hi" class="big">लड़का</span>(laṛkā)の ड़ は、舌をそらせて上あごを弾く音です。巻き舌のように聞こえるのは、こちらの音かもしれません。</p>
+<p>では、このそり舌音はどこから来たのでしょう。ヒンディー語の祖先にあたる古いインドの言葉、ヴェーダ語(古いサンスクリット語)の時代には、すでにそり舌音がありました。インド・ヨーロッパ語族の共通の祖先の言葉にはなかったと考えられる音なので、南インドなどで話されるドラヴィダ系の言語の影響で生まれた、という説が19世紀から唱えられてきました。一方で、別の地域の言語の影響だとする説や、インド・アーリア系の言語の中で自然に生まれたとする説もあり、今も議論が続いています。</p>
+
+<h2>5. クメール語の r:消えても、意味の区別は消えない</h2>
+<p>最後は、私がいちばん長く付き合っているクメール語です。クメール語の文字にはしっかり r が書いてあるのに、発音されないことがよくあります。</p>
+<p>まず、標準的なクメール語でも、語末の r は発音しません。たとえば「仕事」の <span lang="km" class="big">ការ</span> は、最後に r の文字(រ)がありますが、読みは kaː です。昔は発音していた音が、文字にだけ残っているのです。タイに住むクメール人の北部クメール語では、この語末の r を今も発音するそうです。</p>
+<p>さらに首都プノンペンの話し言葉では、単語の頭の r も落ちやすくなります。たとえば「先生」の <span lang="km" class="big">គ្រូ</span>(kruː)は、r が抜けて「クー」に近く聞こえます。</p>
+<p>ここで疑問がわきます。r が抜けたら、「対・組」を意味する <span lang="km" class="big">គូ</span>(kuː)と同じ音にならないのでしょうか？</p>
+<p>答えは「ならない」です。研究によると、プノンペンの人は r を落とす代わりに、<strong>声の高さを下げてから上げる</strong>ような音の動きや、息の混じった声で区別しているそうです。聞き手も、声の高さの違いだけで「先生」と「対」を聞き分けられるという実験結果があります。</p>
+<p>クメール語はタイ語やベトナム語と違って、声調のない言語です。それなのに、r が消えた跡に、声調のような区別が生まれつつある。言葉が変わっていく瞬間を、今まさに見ているようでわくわくします。</p>
+<p>ちなみに、クメール文字にはもともと、インドのそり舌音を表す文字の列(<span lang="km" class="big">ដ ឋ ឌ ឍ ណ</span>)もあります。でも今のクメール語では、そり舌ではなく、ふつうの d・t・n などの音で読みます。インドから文字を借りたときの音の区別が、形だけ残っているんですね。クメール語の読み方は、<a href="/khmer-words/">クメール語 単語分解ツール</a>でも調べられます。</p>
+
+<h2>6. 話し手の「楽したい」と、聞き手の「区別したい」</h2>
+<p>5つの「なんで？」を調べてみて、言葉の中ではいつも2つの力が綱引きをしているように感じました。</p>
+<div class="force">
+<div class="box"><h3>話し手:楽に言いたい</h3><p>「書きて」が「書いて」になる。クメール語の r が抜ける。ペンを離さずに書けるように形を変える。言葉は、話す人・書く人の手間を減らす方向に変わっていきます。</p></div>
+<div class="box"><h3>聞き手:ちゃんと区別したい</h3><p>ヒンディー語の「豆」と「枝」。r が消えても声の高さで区別するクメール語。語頭と語末の形で切れ目が分かるモンゴル文字。伝わらなくなる変化には、ブレーキがかかります。</p></div>
+</div>
+<p>そこに「よく使う言葉は、昔の形のまま残る」という英語の不規則動詞の話が重なります。今の言葉の形は、この綱引きと、何百年分もの「使われた回数」が積み重なってできたものなのでしょう。</p>
+<p>学習者の私たちには非効率に見える仕組みも、その言葉で毎日暮らす人たちにとっては、楽に話せて、ちゃんと伝わる、効率のいい形なのかもしれません。</p>
+<p>そう思うと、不規則動詞の表も、モンゴル文字の形の変化も、少しだけ愛おしく見えてきます。「なんで？」と思ったら、それはその言葉の歴史をのぞく入り口なのかもしれません。</p>
+
+<h2>参考</h2>
+<ul style="font-size:14px">
+<li>Lieberman, E. et al. (2007) "Quantifying the evolutionary dynamics of language." <i>Nature</i> 449: 713–716. <a href="https://doi.org/10.1038/nature06137" target="_blank" rel="noopener">doi:10.1038/nature06137</a></li>
+<li><a href="https://news.mit.edu/2007/language-1015" target="_blank" rel="noopener">Predicting the future of the past tense(MIT News, 2007)</a>:不規則動詞の数と半減期、wed の予測</li>
+<li><a href="https://www.etymonline.com/word/went" target="_blank" rel="noopener">went(Online Etymology Dictionary)</a>:went と wend、ēode の歴史</li>
+<li>柳原恵津子「『金光明最勝王経』平安初期点コーパスによる音便形の分析」(<a href="https://clrd.ninjal.ac.jp/lrw/lrw2024/i2_B1-paper.pdf" target="_blank" rel="noopener">言語資源ワークショップ2024、国立国語研究所</a>):平安初期に音便が広まりはじめたこと</li>
+<li><a href="https://en.wikipedia.org/wiki/Old_Uyghur_alphabet" target="_blank" rel="noopener">Old Uyghur alphabet(Wikipedia)</a>:ソグド文字から続く筆記体と、位置による文字の形</li>
+<li><a href="https://archive.phonetics.ucla.edu/Language/HIN/hin_word-list_1986_03.html" target="_blank" rel="noopener">Hindi word list(UCLA Phonetics Lab Archive)</a>:दाल / डाल、तीन / टीन の発音</li>
+<li>Hock, H. H. (2015) <a href="https://www.degruyterbrill.com/document/doi/10.1515/jsall-2015-0005/html" target="_blank" rel="noopener">"The Northwest of South Asia and beyond: The issue of Indo-Aryan retroflexion yet again."</a> <i>Journal of South Asian Languages and Linguistics</i>:そり舌音の起源をめぐる議論</li>
+<li>Kirby, J. (2014) <a href="https://www.pure.ed.ac.uk/ws/files/14181671/kirby2014acoustic_preprint.pdf" target="_blank" rel="noopener">"Incipient tonogenesis in Phnom Penh Khmer: Acoustic and perceptual studies."</a> <i>Journal of Phonetics</i>:プノンペンの r の脱落と声の高さによる区別</li>
+<li><a href="https://en.wikipedia.org/wiki/Khmer_language" target="_blank" rel="noopener">Khmer language(Wikipedia)</a>:語末の r、北部クメール語、プノンペン方言</li>
+</ul>
+</article>
+</main>
+<script>
+(function(){
+  var b=document.getElementById('onbinBtn');if(!b)return;
+  var cells=document.querySelectorAll('.ob td.f');
+  b.addEventListener('click',function(){
+    var showOld=b.getAttribute('aria-pressed')!=='true';
+    b.setAttribute('aria-pressed',showOld?'true':'false');
+    b.textContent=showOld?'今の形にもどす':'昔の形を見る';
+    cells.forEach(function(c){
+      c.textContent=showOld?c.dataset.old:c.dataset.new;
+      c.classList.toggle('new',!showOld&&c.dataset.old!==c.dataset.new);
+    });
+  });
+})();
+</script>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
