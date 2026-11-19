@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クメール語の「見えない区切り」　単語分解ツールの読みを直してみた | 言語オタクの多言語学習ラボ</title>
+<meta name="description" content="クメール語の単語分解ツールで、複合語の読みがずれていました。文字には書かれない「語の切れ目」をどう見分けるか、直し方と残った課題をまとめました。">
+<link rel="canonical" href="https://gengootakulab-star.github.io/note-khmer-compound-reading.html">
+<meta property="og:type" content="article"><meta property="og:title" content="クメール語の「見えない区切り」　単語分解ツールの読みを直してみた | 言語オタクの多言語学習ラボ"><meta property="og:description" content="クメール語の単語分解ツールで、複合語の読みがずれていました。文字には書かれない「語の切れ目」をどう見分けるか、直し方と残った課題をまとめました。"><meta property="og:image" content="https://gengootakulab-star.github.io/icon-512.png"><meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="180x180" href="icon-180.png"><link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="notes.html">
+<main id="main">
+<article class="wrap page prose">
+<p><a href="notes.html">← NOTES</a></p>
+<span class="en">KHMER · TOOLS</span>
+<h1>クメール語の「見えない区切り」　単語分解ツールの読みを直してみた</h1>
+<p style="color:var(--mute);font-size:14px"><time datetime="2026-11-19">2026-11-19</time></p>
+<p>以前作った<a href="note-khmer-word-tool.html">クメール語の単語分解ツール</a>を見直していたら、読みの目安がおかしな単語がたくさん見つかりました。</p>
+<p>原因を調べてみると、クメール文字の「書かれない区切り」の問題でした。今回は、何がずれていたのか、どう直したのか、そしてまだ直しきれていないところをまとめます。</p>
+
+<h2>どこがずれていたの？</h2>
+<p>たとえば「<span lang="km">ពួកគេ</span>」(彼ら)。ツールは /puə.kɑ.keː/ と、3つの音節で読んでいました。</p>
+<p>でも実際は、<span lang="km">ពួក</span>(仲間・〜たち)と <span lang="km">គេ</span>(彼ら)がくっついた語で、/puəʔ.keː/ のように2つの音節で読みます。真ん中の <span lang="km">ក</span> は、次の音節の頭ではなく、<strong>前の音節の終わりの子音(末子音)</strong>なんです。</p>
+<p>同じように読みがずれていた単語は、辞書の約9,500語のうち、およそ4分の1にもなっていました。</p>
+
+<h2>なぜずれてしまうの？</h2>
+<p>クメール文字では、母音記号のつかない子音は、ふつう「ɑ」や「ɔ」という母音(固有母音)をつけて読みます。</p>
+<p>ところが、音節の終わりにくる末子音も、見た目は同じ「母音記号のつかない子音」です。しかもクメール語は単語の間にスペースを入れないので、<strong>どこが語の切れ目なのかが文字からは分かりません</strong>。</p>
+<p>以前のツールは、「語の一番最後にある子音だけを末子音として読む」というルールでした。そのため、<span lang="km">ទឹក</span>(水)+ <span lang="km">ដោះ</span>(乳)=「<span lang="km">ទឹកដោះ</span>」(牛乳)のような複合語で、真ん中の <span lang="km">ក</span> を /kɑ/ という独立した音節として読んでしまっていました。</p>
+
+<h2>単純なルールでは直せない</h2>
+<p>それなら「母音記号のあとに子音が1つだけ来たら、末子音として読む」とすればよさそうです。ところが、そうはいきません。</p>
+<p>パーリ語やサンスクリット語から入ってきた単語には、同じ形でも、本当にその子音を音節として読むものがあるからです。</p>
+<ul>
+<li><span lang="km">វាសនា</span>(運命)は /ʋiə.sɑ.niə/。真ん中の <span lang="km">ស</span> は /sɑ/ と読む</li>
+<li><span lang="km">ពួកគេ</span>(彼ら)は /puəʔ.keː/。真ん中の <span lang="km">ក</span> は末子音</li>
+</ul>
+<p>文字の並び方だけでは、この2つを区別できないんです。</p>
+
+<h2>どうやって直したか</h2>
+<p>そこで、ツールが持っている<strong>辞書</strong>を使うことにしました。</p>
+<p>「そこまでの部分が、辞書にある1つの単語になるか」を確かめて、なるときだけ末子音として読みます。<span lang="km">ពួកគេ</span> なら、<span lang="km">ពួក</span> が辞書にあるので、ここが語の切れ目だと分かります。</p>
+<p>この方法で、読みが変わったのは約1,850語です。いくつか例を挙げます。</p>
+<table class="wide">
+<tr><th>単語</th><th>以前の読み</th><th>直した読み</th></tr>
+<tr><td><span lang="km">ពួកគេ</span><br><small>彼ら</small></td><td>puə.kɑ.keː</td><td>puəʔ.keː</td></tr>
+<tr><td><span lang="km">ស្ថានភាព</span><br><small>状況</small></td><td>stʰaː.nɔ.pʰiəp</td><td>stʰaːn.pʰiəp</td></tr>
+<tr><td><span lang="km">ខាងក្រោយ</span><br><small>後ろ</small></td><td>kʰaː.ŋɔ.kraoj</td><td>kʰaːŋ.kraoj</td></tr>
+<tr><td><span lang="km">បាយព្រឹក</span><br><small>朝ごはん</small></td><td>ɓaː.jɔ.prɨk</td><td>ɓaːj.prɨk</td></tr>
+</table>
+<p><span lang="km">វាសនា</span> のような借用語は、前半が辞書の単語にならないので、これまでどおり /ʋiə.sɑ.niə/ と読みます。</p>
+
+<h2>ついでに見つけた「ាំង」</h2>
+<p>調べているうちに、もうひとつ間違いが見つかりました。</p>
+<p>母音記号 <span lang="km">ា</span> に鼻音の記号 <span lang="km">ំ</span> がつき、そのあとに <span lang="km">ង</span> が来る「<span lang="km">ាំង</span>」という組み合わせです。ツールは「aːm + ŋ」と両方の音を重ねて /aːmŋ/ と表示していました。</p>
+<p>この組み合わせは、a系列の子音のあとでは /aŋ/、o系列の子音のあとでは /ĕəŋ/ と読みます。たとえば <span lang="km">ក្រសាំង</span> は /krɑ.saŋ/ です。こちらもあわせて直しました。</p>
+
+<h2>まだ残っている課題</h2>
+<p>辞書を頼りにしているので、苦手なケースもあります。</p>
+<ul>
+<li>前半の部分が辞書にない複合語(例: <span lang="km">វៀតណាម</span> ベトナム)は、まだ直っていません</li>
+<li>前半が、たまたま別の単語と同じ形になる借用語では、かえって区切りがずれることがあります</li>
+<li>読まない文字につく記号「<span lang="km">៍</span>」は、まだうまく扱えていません</li>
+</ul>
+<p>ツールの読みは、あくまで「読みの目安」です。おかしな読みを見つけたら、ツールのページ下にある報告リンクから教えてもらえるとうれしいです。</p>
+
+<h2>直してみて</h2>
+<p>今回の作業で、クメール文字は「書かれていない情報」を読み手が補いながら読む文字なんだ、とあらためて実感しました。</p>
+<p>ネイティブの人は、単語を知っているから自然に区切れる。プログラムに同じことをさせようとすると、結局「単語を知っていること」(辞書)が必要になる、というのが面白いところでした。</p>
+<p>クメール語を学ぶときも、知っている単語が増えるほど、区切りが見えるようになって読みやすくなるのかもしれませんね。</p>
+<p><a class="btn" href="/khmer-words/">▶ クメール語 単語分解ツール</a></p>
+</article>
+</main>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
